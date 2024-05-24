@@ -1,0 +1,25 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+
+<main class="accueil">
+    <section class="vitrine">
+        <h1>{{ firstpages.h1 }}</h1>
+        <h2>{{ firstpages.h2 }}</h2>
+        <p>{{ firstpages.introduction }}</p>
+    </section>
+    <!--Mes dernières réalisations-->
+</main>
+
+{% endblock %}
+
+{% block js %}
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+            const bgImgElements = document.querySelector('main.accueil');
+            const bgImgName = "{{ firstpages.bg_img }}"; // Assurez-vous que cette variable contient le bon chemin          
+            bgImgElements.style.backgroundImage = `linear-gradient(135deg, rgba(200, 121, 127, 0.95), rgba(77, 19, 92, 0.95)), url('/media/${bgImgName}')`;       
+            
+        });
+</script>
+{% endblock %}

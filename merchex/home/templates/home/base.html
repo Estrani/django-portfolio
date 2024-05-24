@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Bienvenue sur mon portfolio de développeuse web et web mobile. Retrouvez toutes les informations me concernant, moi et mon travail, que ce soit sur la conception de site, de design CSS ou de scripts JS et Python.">
+
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Lambert Perrine | Accueil | Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-bar">
+            <div class="titre">
+                <a class="titre" href="../html/accueil.html">
+                    <img class="logo" src="" alt="">
+                </a>
+            </div>
+            <div class="liens">
+                <nav>
+                    <!-- liens pages-->
+                    <a href="../html/accueil.html">Accueil</a>
+                    <a href="../html/profil.html">Profil</a>
+                    <a href="../html/competence.html">Compétences</a>
+                    <a href="../html/realisation.html">Réalisations</a>
+                    <a href="../html/contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <footer class="footer">
+        <div>
+            <div class="liens">
+                <nav>
+                    <!-- je sais pas quoi mettre-->
+                    <a href="../html/accueil.html">Accueil</a>
+                    <a href="../html/profil.html">Profil</a>
+                    <a href="../html/competence.html">Compétences</a>
+                    <a href="../html/realisation.html">Réalisations</a>
+                    <a href="../html/contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+{% block js %}
+{% endblock %}
+</body>
+</html>
