@@ -109,12 +109,9 @@ footer {
 /*accueil*/
 
 main.accueil {
-    
-    background-image: linear-gradient(135deg, rgba(200, 121, 127, 0.95), rgba(77, 19, 92, 0.95));
     background-color: linear-gradient(135deg, rgba(200, 121, 127, 0.95), rgba(77, 19, 92, 0.95));
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
+    width: 100%;
+    flex-direction: column;
 
 }
 
@@ -126,6 +123,9 @@ main.accueil {
     min-height: 500px;
     padding: 7%;
     line-height: 36px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
 }
 
 .vitrine h1 {
@@ -144,6 +144,35 @@ main.accueil {
     width: 100%;
     font-size: calc(0.5rem + 1vw);
 }
+
+/* Parcours */
+.parcours {
+    display: flex;
+    flex-direction: column;
+}
+
+.bandeau {
+    height: 490px;
+    background-color: black;
+    display: flex;
+    margin: 2% 0%;
+}
+
+.bandeau h2 {
+    color: black;
+    text-align: center;
+}
+
+.bulle-entete {
+    width: 20%;
+    height: 490px;
+    background-color: aliceblue;
+    border-radius: 0% 100% 100% 0%;
+    display: flex;
+    align-items: center;
+}
+
+
 
 /*profil*/
 

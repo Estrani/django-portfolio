@@ -4,11 +4,13 @@ from home.models import FirstPage
 from home.forms import ContactUsForm
 from django.core.mail import send_mail
 from django.shortcuts import redirect
+from home.block import JourneyBanner
 
 
 def home(request):
     firstpages = FirstPage.objects.first()
-    return render(request, 'home/first-page.html', {'firstpages' : firstpages})
+    journeys = JourneyBanner.objects.all()
+    return render(request, 'home/first-page.html', {'firstpages' : firstpages, 'journeys' : journeys})
 
 def cv(request):
     return render(request, 'home/cv.html')

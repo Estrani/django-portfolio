@@ -6,3 +6,7 @@ class FirstPage(models.Model):
     introduction = models.fields.TextField()
     bg_img = models.ImageField()
 
+    def __str__(self):
+        return f'{self.h1}'
+
+
